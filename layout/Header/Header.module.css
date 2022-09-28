@@ -1,0 +1,48 @@
+.bold {
+    font-weight: 800;
+}
+
+.sm {
+    font-size: 12px;
+}
+
+.md {
+    font-size: 18px;
+}
+
+.goodBlock {
+    color: #7a7877;
+}
+
+.welcomeBlock {
+    color: #bebebe;
+}
+
+.header svg {
+    fill: #bdbcb6;
+}
+
+.previewIcon svg {
+    width: 75px;
+    height: 75px;
+}
+
+.wrapperBlock {
+    display: flex;
+    align-items: center;
+}
+
+.wrapperBlock button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.wrapperBlock button img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.arrowDownIcon {
+    width: 15px !important;
+    height: 15px !important;
+}
