@@ -1,9 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --preview-icon-color: #BDBCB7;
+    --main-svg-color: #616161;
+    --panel-bg-color: #0F0F0F;
+    --search-input-color: #1D1D1D;
+    --light-green: #E3FFA8;
+}
+
 html,
-body {
+body,
+ul {
     padding: 0;
     margin: 0;
     font-family: "Quicksand", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: var(--preview-icon-color);
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: "Quicksand", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+input::placeholder {
+    font-weight: 600;
+}
+
+
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 a {
@@ -11,6 +43,22 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.3s linear;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 * {
     box-sizing: border-box;
+}
+
+
+svg {
+    fill: var(--main-svg-color) !important;
 }

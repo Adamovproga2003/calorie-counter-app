@@ -1,3 +1,7 @@
+.relative {
+    position: relative;
+}
+
 .bold {
     font-weight: 800;
 }
@@ -8,6 +12,64 @@
 
 .md {
     font-size: 18px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "greetingBlock wrapper";
+    background-color: var(--panel-bg-color);
+    padding: 20px 40px;
+}
+
+.greetingBlock {
+    grid-area: greetingBlock;
+}
+
+.wrapper {
+    grid-area: wrapper;
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(auto, 380px) auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.searchInput {
+    background-color: transparent;
+    padding: 10px 40px;
+    border: 2px solid var(--search-input-color);
+    border-radius: 12px;
+    color: #fff;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.searchInput:hover {
+    background-color: var(--search-input-color);
+    cursor: pointer;
+}
+
+.searchInput:active,
+.searchInput:focus {
+    background-color: transparent;
+    cursor: auto;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    fill: #575757 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
 }
 
 .goodBlock {
@@ -28,21 +90,52 @@
 }
 
 .wrapperBlock {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
+    gap: 10px;
+}
+
+
+.wrapperBlock .notifyButton:hover {
+    background-color: rgba(87, 87, 87, 0.2);
 }
 
 .wrapperBlock button svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    fill: rgb(87, 87, 87) !important;
 }
 
 .wrapperBlock button img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.remindBlock button {
+    padding: 10px;
+    background-color: #292927;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userButton {
+    font-weight: 600;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.userButton label:hover {
+    cursor: pointer;
 }
 
 .arrowDownIcon {
-    width: 15px !important;
-    height: 15px !important;
+    width: 10px !important;
+    height: 10px !important;
 }
